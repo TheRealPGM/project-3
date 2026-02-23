@@ -120,6 +120,7 @@
 										id="name" 
 										name="name" 
 										placeholder="Name"
+										required
 									/>
 								</div>
 								
@@ -131,12 +132,28 @@
 										id="email" 
 										name="name" 
 										placeholder="Email"
+										required
 									/>
 								</div>
 							</fieldset>
 
-							<label for="question">Your question</label>
-							<textarea name="question" id="question"></textarea>
+							<label class="touch__label" for="question">Your question</label>
+							<textarea
+								class="touch__textarea"
+								name="question" 
+								id="question"
+								placeholder="Question"
+								required
+							></textarea>
+
+							<label class="touch__label touch__check-block" for="checkbox">
+								<input required class="touch__checkbox" type="checkbox" id="checkbox" />
+								I agree width the <a href="#">terms</a>
+							</label>
+
+							<button class="btn-send touch__btn">
+								send request
+							</button>
 						</form>
 					</div>
 				</div>
