@@ -5,6 +5,7 @@
 	&__wrapper {
 		margin-top: 60px;
 	}
+
 	&__img {
 		display: none;
 	}
@@ -79,7 +80,6 @@
 	}
 
 	&__checkbox {
-		// vertical-align: middle;
 		margin-right: 15px;
 		width: 15px;
 		height: 15px;
@@ -87,6 +87,27 @@
 
 	&__btn {
 		margin-top: 20px;
+	}
+
+	&__decor {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.touch {
+		&__form {
+			position: relative;
+			width: 300px;
+			padding-left: 24px;
+		}
+
+		&__decor {
+			display: block;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+		}
 	}
 }
 
@@ -101,12 +122,15 @@
 		}
 
 		&__input {
-
 			&:hover {
 				border: none;
 				outline: 1px solid $dark;
 			}
-		}	
+		}
+		
+		&__form {
+			padding-left: 20px;
+		}
 	}
 }
 
@@ -115,6 +139,27 @@
 		&__img {
 			width: 100%;
 			height: 356px;
+		}
+
+		&__form {
+			width: auto;
+			padding-left: 143px;
+		}
+
+		&__fieldset {
+			display: flex;
+			column-gap: 45px;
+		}
+
+		&__label,
+		&__check-block,
+		&__input,
+		&__textarea {
+			width: 300px;
+		}
+
+		&__decor {
+			right: 75px;
 		}
 	}
 }
