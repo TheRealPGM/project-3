@@ -27,8 +27,8 @@ try {
         modules: [Navigation, Pagination],
 
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '.icon-right-open',
+            prevEl: '.icon-left-open',
         },
 
         // Responsive breakpoints
@@ -41,6 +41,7 @@ try {
 
             1920: {
                 spaceBetween: 35,
+                slidesPerView: 3,
             },
         },
     });
